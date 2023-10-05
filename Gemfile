@@ -14,17 +14,17 @@ gem "minitest", ">= 5.15.0"
 gem "rake", ">= 11.1"
 
 gem "sprockets-rails", ">= 2.0.0"
-gem "propshaft", ">= 0.1.7"
+gem "propshaft", ">= 0.5.0"
 gem "capybara", ">= 3.26"
 gem "selenium-webdriver", ">= 4.0.0"
 
 gem "rack-cache", "~> 1.2"
-gem "stimulus-rails"
-gem "turbo-rails"
-gem "jsbundling-rails"
-gem "cssbundling-rails"
-gem "importmap-rails"
-gem "tailwindcss-rails"
+gem "stimulus-rails", ">= 1.0.3"
+gem "turbo-rails", ">= 1.0.1"
+gem "jsbundling-rails", ">= 1.0.1"
+gem "cssbundling-rails", ">= 1.1.0"
+gem "importmap-rails", ">= 1.0.2"
+gem "tailwindcss-rails", ">= 2.0.3"
 # require: false so bcrypt is loaded only when has_secure_password is used.
 # This is to avoid Active Model (and by extension the entire framework)
 # being dependent on a binary library.
