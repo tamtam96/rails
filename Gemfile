@@ -47,14 +47,14 @@ end
 
 group :doc do
   gem "sdoc", ">= 2.3.0"
-  gem "redcarpet", "~> 3.2.3", platforms: :ruby
+  gem "redcarpet", "~> 3.5.1", platforms: :ruby
   gem "w3c_validators", "~> 1.3.6"
   gem "kindlerb", "~> 1.2.0"
   gem "rouge"
 end
 
 # Active Support
-gem "dalli", ">= 3.0.1"
+gem "dalli", ">= 3.2.3"
 gem "listen", "~> 3.3", require: false
 gem "libxml-ruby", platforms: :ruby
 gem "connection_pool", require: false
@@ -66,9 +66,9 @@ gem "webrick", require: false
 
 # Active Job
 group :job do
-  gem "resque", require: false
-  gem "resque-scheduler", require: false
-  gem "sidekiq", require: false
+  gem "resque", ">= 2.2.1", require: false
+  gem "resque-scheduler", ">= 4.6.0", require: false
+  gem "sidekiq", ">= 7.1.3", require: false
   gem "sucker_punch", require: false
   gem "delayed_job", require: false
   gem "queue_classic", github: "jhawthorn/queue_classic", branch: "fix-connection-pg-14", require: false, platforms: :ruby
@@ -81,7 +81,7 @@ end
 
 # Action Cable
 group :cable do
-  gem "puma", require: false
+  gem "puma", ">= 5.6.7", require: false
 
   gem "hiredis", require: false
   gem "redis", "~> 4.0", require: false
@@ -93,15 +93,15 @@ end
 
 # Active Storage
 group :storage do
-  gem "aws-sdk-s3", require: false
+  gem "aws-sdk-s3", ">= 1.111.1", require: false
   gem "google-cloud-storage", "~> 1.11", require: false
   gem "azure-storage-blob", "~> 2.0", require: false
 
-  gem "image_processing", "~> 1.2"
+  gem "image_processing", "~> 1.12", ">= 1.12.2"
 end
 
 # Action Mailbox
-gem "aws-sdk-sns", require: false
+gem "aws-sdk-sns", ">= 1.51.0", require: false
 gem "webmock"
 
 group :ujs do
