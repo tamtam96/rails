@@ -16,7 +16,7 @@ gem "rake", ">= 11.1"
 gem "sprockets-rails", ">= 2.0.0"
 gem "propshaft", ">= 0.1.7"
 gem "capybara", ">= 3.26"
-gem "selenium-webdriver", ">= 4.0.0"
+gem "selenium-webdriver", ">= 4.2.0"
 
 gem "rack-cache", "~> 1.2"
 gem "stimulus-rails"
@@ -38,17 +38,17 @@ gem "terser", ">= 1.1.4", require: false
 gem "json", ">= 2.0.0"
 
 group :rubocop do
-  gem "rubocop", ">= 0.90", require: false
-  gem "rubocop-minitest", require: false
-  gem "rubocop-packaging", require: false
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop", ">= 1.25.0", require: false
+  gem "rubocop-minitest", ">= 0.17.1", require: false
+  gem "rubocop-packaging", ">= 0.5.2", require: false
+  gem "rubocop-performance", ">= 1.13.2", require: false
+  gem "rubocop-rails", ">= 2.13.1", require: false
 end
 
 group :doc do
   gem "sdoc", ">= 2.3.0"
   gem "redcarpet", "~> 3.2.3", platforms: :ruby
-  gem "w3c_validators", "~> 1.3.6"
+  gem "w3c_validators", "~> 1.3.7"
   gem "kindlerb", "~> 1.2.0"
   gem "rouge"
 end
@@ -58,7 +58,7 @@ gem "dalli", ">= 3.0.1"
 gem "listen", "~> 3.3", require: false
 gem "libxml-ruby", platforms: :ruby
 gem "connection_pool", require: false
-gem "rexml", require: false
+gem "rexml", ">= 3.3.2", require: false
 
 # for railties
 gem "bootsnap", ">= 1.4.4", require: false
@@ -94,7 +94,7 @@ end
 # Active Storage
 group :storage do
   gem "aws-sdk-s3", require: false
-  gem "google-cloud-storage", "~> 1.11", require: false
+  gem "google-cloud-storage", "~> 1.36", ">= 1.36.0", require: false
   gem "azure-storage-blob", "~> 2.0", require: false
 
   gem "image_processing", "~> 1.2"
@@ -102,10 +102,10 @@ end
 
 # Action Mailbox
 gem "aws-sdk-sns", require: false
-gem "webmock"
+gem "webmock", ">= 3.15.1"
 
 group :ujs do
-  gem "webdrivers"
+  gem "webdrivers", ">= 5.1.0"
 end
 
 # Action View
