@@ -66,9 +66,9 @@ gem "webrick", require: false
 
 # Active Job
 group :job do
-  gem "resque", require: false
+  gem "resque", ">= 2.2.1", require: false
   gem "resque-scheduler", require: false
-  gem "sidekiq", require: false
+  gem "sidekiq", ">= 8.0.0", require: false
   gem "sucker_punch", require: false
   gem "delayed_job", require: false
   gem "queue_classic", github: "jhawthorn/queue_classic", branch: "fix-connection-pg-14", require: false, platforms: :ruby
