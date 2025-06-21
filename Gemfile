@@ -13,18 +13,18 @@ gem "minitest", ">= 5.15.0"
 # We need a newish Rake since Active Job sets its test tasks' descriptions.
 gem "rake", ">= 11.1"
 
-gem "sprockets-rails", ">= 2.0.0"
-gem "propshaft", ">= 0.1.7"
-gem "capybara", ">= 3.26"
-gem "selenium-webdriver", ">= 4.0.0"
+gem "sprockets-rails", ">= 3.5.0"
+gem "propshaft", ">= 0.5.0"
+gem "capybara", ">= 3.37.0"
+gem "selenium-webdriver", ">= 4.2.0"
 
-gem "rack-cache", "~> 1.2"
-gem "stimulus-rails"
-gem "turbo-rails"
-gem "jsbundling-rails"
-gem "cssbundling-rails"
-gem "importmap-rails"
-gem "tailwindcss-rails"
+gem "rack-cache", "~> 1.14", ">= 1.14.0"
+gem "stimulus-rails", ">= 1.0.3"
+gem "turbo-rails", ">= 1.0.1"
+gem "jsbundling-rails", ">= 1.0.1"
+gem "cssbundling-rails", ">= 1.1.0"
+gem "importmap-rails", ">= 1.0.2"
+gem "tailwindcss-rails", ">= 2.0.3"
 # require: false so bcrypt is loaded only when has_secure_password is used.
 # This is to avoid Active Model (and by extension the entire framework)
 # being dependent on a binary library.
@@ -42,13 +42,13 @@ group :rubocop do
   gem "rubocop-minitest", require: false
   gem "rubocop-packaging", require: false
   gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop-rails", ">= 2.13.1", require: false
 end
 
 group :doc do
-  gem "sdoc", ">= 2.3.0"
+  gem "sdoc", ">= 2.3.1"
   gem "redcarpet", "~> 3.2.3", platforms: :ruby
-  gem "w3c_validators", "~> 1.3.6"
+  gem "w3c_validators", "~> 1.3.7"
   gem "kindlerb", "~> 1.2.0"
   gem "rouge"
 end
@@ -66,9 +66,9 @@ gem "webrick", require: false
 
 # Active Job
 group :job do
-  gem "resque", require: false
-  gem "resque-scheduler", require: false
-  gem "sidekiq", require: false
+  gem "resque", ">= 2.2.1", require: false
+  gem "resque-scheduler", ">= 4.6.0", require: false
+  gem "sidekiq", ">= 6.4.0", require: false
   gem "sucker_punch", require: false
   gem "delayed_job", require: false
   gem "queue_classic", github: "jhawthorn/queue_classic", branch: "fix-connection-pg-14", require: false, platforms: :ruby
@@ -93,8 +93,8 @@ end
 
 # Active Storage
 group :storage do
-  gem "aws-sdk-s3", require: false
-  gem "google-cloud-storage", "~> 1.11", require: false
+  gem "aws-sdk-s3", ">= 1.111.1", require: false
+  gem "google-cloud-storage", "~> 1.36", ">= 1.36.0", require: false
   gem "azure-storage-blob", "~> 2.0", require: false
 
   gem "image_processing", "~> 1.2"
@@ -102,10 +102,10 @@ end
 
 # Action Mailbox
 gem "aws-sdk-sns", require: false
-gem "webmock"
+gem "webmock", ">= 3.15.1"
 
 group :ujs do
-  gem "webdrivers"
+  gem "webdrivers", ">= 5.1.0"
 end
 
 # Action View
