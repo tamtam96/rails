@@ -14,7 +14,7 @@ gem "minitest", ">= 5.15.0"
 gem "rake", ">= 11.1"
 
 gem "sprockets-rails", ">= 2.0.0"
-gem "propshaft", ">= 0.1.7"
+gem "propshaft", ">= 1.2.0"
 gem "capybara", ">= 3.26"
 gem "selenium-webdriver", ">= 4.0.0"
 
