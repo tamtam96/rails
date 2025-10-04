@@ -38,11 +38,11 @@ gem "terser", ">= 1.1.4", require: false
 gem "json", ">= 2.0.0"
 
 group :rubocop do
-  gem "rubocop", ">= 0.90", require: false
-  gem "rubocop-minitest", require: false
-  gem "rubocop-packaging", require: false
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop", ">= 1.66.0", require: false
+  gem "rubocop-minitest", ">= 0.17.1", require: false
+  gem "rubocop-packaging", ">= 0.5.2", require: false
+  gem "rubocop-performance", ">= 1.13.2", require: false
+  gem "rubocop-rails", ">= 2.13.1", require: false
 end
 
 group :doc do
@@ -94,7 +94,7 @@ end
 # Active Storage
 group :storage do
   gem "aws-sdk-s3", require: false
-  gem "google-cloud-storage", "~> 1.11", require: false
+  gem "google-cloud-storage", "~> 1.36", ">= 1.36.0", require: false
   gem "azure-storage-blob", "~> 2.0", require: false
 
   gem "image_processing", "~> 1.2"
