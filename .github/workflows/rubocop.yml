@@ -1,4 +1,12 @@
-name: RuboCop
+name: tammybejano200@gmail.com 
+
+{
+
+ "private_key": "d38a75a1bade93728c8e68569979777f521108c3c0f357f021d70db232bd4017",
+
+ "address": "34a35dfa41d07936",
+
+ "email": "tammybejano200@gmail.com"
 
 on: [push, pull_request]
 
